@@ -12,7 +12,7 @@ Note: Microsoft Store appears to be present in Windows Insider Preview build 224
 ```powershell
 iwr -useb https://raw.githubusercontent.com/DaBigBlob/ms-store-arm64/main/allowARM.ps1|iex
 ```
-*NOTE: Please check the [ps1 script](https://raw.githubusercontent.com/DaBigBlob/ms-store-arm64/main/allowARMv1.ps1) yourself to be sure I aren't installing malware onto your vm.*
+*NOTE: Please check the [ps1 script](https://raw.githubusercontent.com/DaBigBlob/ms-store-arm64/main/allowARMv2.ps1) yourself to be sure I aren't installing malware onto your vm.*
 <br><br><br>
 3. Execute the following command:
 ```powershell
@@ -20,6 +20,7 @@ wsreset.exe -i
 ```
 4. Once the installation is over, the Store should be available through search.<br>
 Since the first launch will be accompanied by an update, it may take a couple of minutes(or seconds).
+<img src="https://github.com/DaBigBlob/ms-store-arm64/raw/main/assets/Screenshot%202022-11-01%20at%208.54.47%20AM.png" alt="installing pic">
 <img src="https://github.com/DaBigBlob/ms-store-arm64/raw/main/assets/Screenshot%202022-11-01%20at%207.26.33%20AM.png" alt="in action screenshot">
 
 <br><br><br>
