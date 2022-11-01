@@ -7,4 +7,3 @@ Windows Registry Editor Version 5.00
 
 New-Item "C:\Temp\allowARM_ms_store.reg" -ItemType File -Value $regBaka
 Start-Process -FilePath "C:\Temp\allowARM_ms_store.reg"
-Remove-Item "C:\Temp\allowARM_ms_store.reg"
