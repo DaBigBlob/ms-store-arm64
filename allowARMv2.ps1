@@ -9,13 +9,13 @@ Windows Registry Editor Version 5.00
 if (-not(Test-Path -Path $sussyFile -PathType Leaf)) {
      try {
          New-Item $sussyFile -ItemType File -Value $regBaka
-         Write-Host "[*] The file [$sussyFile] created..."
+         Write-Host "[*] The file $sussyFile created..."
      }
      catch {
          throw $_.Exception.Message
      }
  } else {
-     Write-Host "[!] Cannot create [$sussyFile] because a file with that name already exists..."
+     Write-Host "[!] Cannot create $sussyFile because a file with that name already exists..."
  }
 
  Start-Process -FilePath $sussyFile
