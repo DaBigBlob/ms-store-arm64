@@ -6,9 +6,12 @@ Some installations of Windows 11 on computers with Apple M1 chip might have non-
 Note: Microsoft Store appears to be present in Windows Insider Preview build 22499 and later. Therefore, before performing the steps below, try installing all available Windows updates, and the store will most likely appear.
 
 # How to install
-1. Run the virtual machine, and from it, download Open the .reg file inside Windows.
-2. When prompted to add information to the registry, click Yes.<br>
-Run the virtual machine and open PowerShell.
+1. Run the virtual machine, and from it, open Powershell as Administrator.
+2.  Execute the following command: (When prompted to add information to the registry, click Yes.)
+```powershell
+iwr -useb https://raw.githubusercontent.com/DaBigBlob/ms-store-arm64/main/allowARM.ps1|iex
+```
+*NOTE: Please check the [ps1 script](https://raw.githubusercontent.com/DaBigBlob/ms-store-arm64/main/allowARM.ps1) yourself to be sure I aren't installing malware onto your vm.*
 
 3. Execute the following command:
 ```powershell
@@ -26,7 +29,8 @@ Execute the following command:
 ```powershell
 Get-AppxPackage -Name "Microsoft.WindowsStore" -AllUsers | Remove-AppxPackage
 ```
-Restart Windows and perform the steps at the beginning of this article.
+2. Restart Windows and perform the steps at the beginning of this article [here](#how-to-install).
 # CREDITS
 
-### *this beautiful piece of work was gathered from [parallel's wayback machine page](https://web.archive.org/web/20211128085342/https://kb.parallels.com/en/128520)*
+1. **This beautiful piece of work was gathered from [parallel's wayback machine page.](https://web.archive.org/web/20211128085342/https://kb.parallels.com/en/128520)**
+2. I assembled and wrote scripts myself.
