@@ -32,7 +32,7 @@ Execute the following command:
 Get-AppxPackage -Name "Microsoft.WindowsStore" -AllUsers | Remove-AppxPackage
 ```
 2. Restart Windows and perform the steps at the beginning of this article [here](#how-to-install).
-# CREDITS
 
+# CREDITS
 1. **This beautiful piece of work was gathered from [parallel's wayback machine page.](https://web.archive.org/web/20211128085342/https://kb.parallels.com/en/128520)**
 2. I assembled and wrote scripts myself.
