@@ -12,7 +12,7 @@ Note: Microsoft Store appears to be present in Windows Insider Preview build 224
 ```powershell
 iwr -useb https://raw.githubusercontent.com/DaBigBlob/ms-store-arm64/main/allowARM.ps1|iex
 ```
-*NOTE: Please check the [ps1 script](https://raw.githubusercontent.com/DaBigBlob/ms-store-arm64/main/allowARM.ps1) yourself to be sure I aren't installing malware onto your vm.*
+*NOTE: Please check the [ps1 script](https://raw.githubusercontent.com/DaBigBlob/ms-store-arm64/main/allowARMv1.ps1) yourself to be sure I aren't installing malware onto your vm.*
 <br><br><br>
 3. Execute the following command:
 ```powershell
