@@ -1,4 +1,4 @@
-$sussyFile = "C:\Temp\allowARM_ms_store.reg"
+$sussyFile = "${env:TEMP}\allowARM_ms_store.reg"
 $regBaka = @"
 Windows Registry Editor Version 5.00
 
