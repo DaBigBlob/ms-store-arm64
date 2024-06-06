@@ -1,4 +1,5 @@
-$sussyFile = "C:\Temp\allowARM_ms_store.reg"
+$uuid = [System.Guid]::NewGuid()
+$sussyFile = "${env:TEMP}\allowARM_ms_store_${uuid}.reg"
 $regBaka = @"
 Windows Registry Editor Version 5.00
 
